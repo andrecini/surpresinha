@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Love Story';
+    src: url(../lib/fonts/love\ story\ ttf.ttf);
+}
+
+@font-face {
+    font-family: 'Love Lady';
+    src: url(../lib/fonts/LoveLadyPersonalUse.ttf);
+}
+
+@font-face {
+    font-family: 'Valentine Soul';
+    src: url(../lib/fonts/ValentineSoul.ttf);
+ }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F23041;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Love Story';
+    font-size: 36px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-family: 'Love Lady';
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    gap: 1rem; 
+}
+
+span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+.btn-love {
+    font-family: 'Love Lady';
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    background-color: #F2BDD0;
+}
+
+.span-div {
+    width: fit-content;
+}
+
+.arrow-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'boxicons';
+}
+
+.carousel-item {
+    height: 50vh !important;
+}
+
+.carousel-item img {
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    display: block !important;
+}
+
+.text {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.btn:focus-visible {
+    background-color: #F2BDD0 !important;
+    border-color: transparent !important;
+}
+

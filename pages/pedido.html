@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="../lib/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="../lib/boxicons/css/animations.css">
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body>    
+    <h1 class="my-4">Quer namorar comigo?</h1>
+    <h2>Escolha sua resposta e não me diga nada</h2>
+    <div id="escolhas" class="box-row my-4">
+      <a id="sim" class="btn btn-love mx-2" href="https://wa.me/5511981724993?text=Parabens%20estamos%20namorando">Sim!</a>
+      <btn id="nao" class="btn btn-love mx-2" onclick="mudarTexto(true)">Não!</btn>
+    </div>
+</body>
+
+</html>
+<script src="../lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="../lib/jquery/dist/jquery-3.6.0.js"></script>
+
+<script>
+function mudarTexto(b) {
+  let e = document.getElementById('escolhas')
+
+  if (b) {
+    e.innerHTML = 
+    "<btn id=\"nao\" class=\"btn btn-love mx-2\" onclick=\"mudarTexto(false)\">Não!</btn>" + "\n" +
+    "<a id=\"sim\" class=\"btn btn-love mx-2\" href=\"https://wa.me/5511981724993?text=Parabens%20estamos%20namorando\">Sim!</a>"
+  } 
+  else {
+    e.innerHTML =     
+    "<a id=\"sim\" class=\"btn btn-love mx-2\" href=\"https://wa.me/5511981724993?text=Parabens%20estamos%20namorando\">Sim!</a>" + "\n" +
+    "<btn id=\"nao\" class=\"btn btn-love mx-2\" onclick=\"mudarTexto(true)\">Não!</btn>"
+  }
+}
+</script>
